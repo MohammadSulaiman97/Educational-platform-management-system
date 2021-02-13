@@ -4,8 +4,8 @@ return [
 
     'Dashboard'=>'Dashboard',
     'Dashboard_page'=>'Dashboard_page',
-    'Main_title'=>'Main_title',
-    'Programname' => 'Programname',
+    'Main_title'=>'Educational platform',
+    'Programname' => 'Educational platform',
     'change_language'=>'change_language',
     'Grades'=>'Grades',
     'Grades_list'=>'Grades_list',

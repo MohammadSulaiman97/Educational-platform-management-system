@@ -4,8 +4,8 @@ return [
 
     'Dashboard'=>'الرئيسية',
     'Dashboard_page'=>'لوحة التحكم',
-    'Main_title'=>'برنامج لادارة منصة تعليمية',
-    'Programname' => 'برنامج لادارة منصة تعليمية',
+    'Main_title'=>' منصة تعليمية',
+    'Programname' => ' منصة تعليمية',
     'change_language'=>'تغير اللغة',
     'Grades'=>'المراحل الدراسية',
     'Grades_list'=>'قائمة المراحل الدراسية',

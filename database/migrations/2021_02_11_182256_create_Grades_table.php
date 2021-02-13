@@ -2,6 +2,7 @@
 
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\Schema;
 
 class CreateGradesTable extends Migration {
 
@@ -9,9 +10,9 @@ class CreateGradesTable extends Migration {
 	{
 		Schema::create('Grades', function(Blueprint $table) {
 			$table->increments('id');
+            $table->string('Name')->unique();
+            $table->string('Notes')->nullable();
 			$table->timestamps();
-			$table->string('Name', 30);
-			$table->string('Notes', 150);
 		});
 	}
 
