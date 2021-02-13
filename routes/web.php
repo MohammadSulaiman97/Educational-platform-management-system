@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
 use Illuminate\Support\Facades\Auth;
 use App\Http\Controllers\Grades\GradeController;
+use App\Http\Controllers\Classrooms\ClassroomController;
 
 /*
 |--------------------------------------------------------------------------
@@ -39,6 +40,9 @@ Route::group(
 
    //==============================Grades============================
     Route::resource('Grades', GradeController::class);
+
+    //==============================Classrooms============================
+    Route::resource('Classrooms', ClassroomController::class);
 });
 
 
