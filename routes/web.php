@@ -43,6 +43,9 @@ Route::group(
 
     //==============================Classrooms============================
     Route::resource('Classrooms', ClassroomController::class);
+    Route::post('delete_all', 'App\Http\Controllers\Classrooms\ClassroomController@delete_all')->name('delete_all');
+
+    Route::post('Filter_Classes', 'App\Http\Controllers\Classrooms\ClassroomController@Filter_Classes')->name('Filter_Classes');
 });
 
 
