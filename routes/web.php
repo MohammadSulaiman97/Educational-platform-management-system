@@ -5,6 +5,7 @@ use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
 use Illuminate\Support\Facades\Auth;
 use App\Http\Controllers\Grades\GradeController;
 use App\Http\Controllers\Classrooms\ClassroomController;
+use App\Http\Controllers\Sections\SectionController;
 
 /*
 |--------------------------------------------------------------------------
@@ -46,6 +47,10 @@ Route::group(
     Route::post('delete_all', 'App\Http\Controllers\Classrooms\ClassroomController@delete_all')->name('delete_all');
 
     Route::post('Filter_Classes', 'App\Http\Controllers\Classrooms\ClassroomController@Filter_Classes')->name('Filter_Classes');
+
+
+   //==============================Classrooms============================
+    Route::resource('Sections', SectionController::class);
 });
 
 
