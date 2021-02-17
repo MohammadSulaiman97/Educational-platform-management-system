@@ -51,6 +51,8 @@ Route::group(
 
    //==============================Classrooms============================
     Route::resource('Sections', SectionController::class);
+
+    Route::get('/classes/{id}', 'App\Http\Controllers\Sections\SectionController@getclasses');
 });
 
 
