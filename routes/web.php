@@ -53,6 +53,12 @@ Route::group(
     Route::resource('Sections', SectionController::class);
 
     Route::get('/classes/{id}', 'App\Http\Controllers\Sections\SectionController@getclasses');
+
+
+    //==============================parents============================
+
+    Route::view('add_parent','livewire.show_Form');
+
 });
 
 

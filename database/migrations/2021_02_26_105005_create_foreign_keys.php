@@ -19,11 +19,21 @@ class CreateForeignKeys extends Migration {
 						->onDelete('cascade')
 						->onUpdate('cascade');
 		});
-		Schema::table('Sections', function(Blueprint $table) {
+		/*Schema::table('Sections', function(Blueprint $table) {
 			$table->foreign('Class_id')->references('id')->on('Classrooms')
 						->onDelete('cascade')
 						->onUpdate('cascade');
-		});
+		});*/
+
+        Schema::table('my_parents', function(Blueprint $table) {
+            $table->foreign('Nationality_Father_id')->references('id')->on('Nationalities');
+            $table->foreign('Blood_Type_Father_id')->references('id')->on('Type_Bloods');
+            $table->foreign('Religion_Father_id')->references('id')->on('Religions');
+            $table->foreign('Nationality_Mother_id')->references('id')->on('Nationalities');
+            $table->foreign('Blood_Type_Mother_id')->references('id')->on('Type_Bloods');
+            $table->foreign('Religion_Mother_id')->references('id')->on('Religions');
+        });
+
 	}
 
 	public function down()
