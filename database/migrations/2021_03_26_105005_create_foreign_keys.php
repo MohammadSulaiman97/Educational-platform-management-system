@@ -34,6 +34,10 @@ class CreateForeignKeys extends Migration {
             $table->foreign('Religion_Mother_id')->references('id')->on('Religions');
         });
 
+        Schema::table('parent_attachments', function(Blueprint $table) {
+            $table->foreign('parent_id')->references('id')->on('my_parents');
+        });
+
 	}
 
 	public function down()
